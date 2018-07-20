@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Twitter Example</h1>
+    <h3>Sentiment Analysis </h3>
+    	<h1>Positive:{{result[0]}}</h1>
+	<h1>Negative:{{result[1]}}</h1>
+	<h1>Neutral:{{result[2]}}</h1>
+	<h1>Total tweets:{{result[3]}}</h1>
+	<h1>Bar Graph</h1>
+	{{ bar_chart.render()|safe }}
+	<h1>Pie Chart</h1>
+	{{ pie_chart.render()|safe }}
+  </body>
+</html>
